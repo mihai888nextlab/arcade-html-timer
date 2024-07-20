@@ -9,16 +9,16 @@
   <body>
     <div class="main">
       <h1>Enter the time you want to wait</h1>
-      <form>
+      <form id="form">
         <div class="inp">
           <div>
-            <input type="number" id="hours" placeholder="00" />
+            <input type="number" id="input-hours" placeholder="00" min="0" />
             <p>h</p>
           </div>
           <div>
             <input
               type="number"
-              id="minutes"
+              id="input-minutes"
               placeholder="00"
               min="0"
               max="60"
@@ -28,7 +28,7 @@
           <div>
             <input
               type="number"
-              id="seconds"
+              id="input-seconds"
               placeholder="00"
               min="0"
               max="60"
@@ -39,6 +39,26 @@
 
         <button type="button" onclick="startTimer()">Start</button>
       </form>
+
+      <div class="timer hidden" id="timer">
+        <div class="inp">
+          <div>
+            <h3 id="display-hours" class="pInp">00</h3>
+            <p>h</p>
+          </div>
+          <div>
+            <h3 id="display-minutes" class="pInp">00</h3>
+            <p>m</p>
+          </div>
+          <div>
+            <h3 id="display-seconds" class="pInp">00</h3>
+            <p>s</p>
+          </div>
+        </div>
+        <button type="button" onclick="stopTimer()">Stop</button>
+      </div>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
