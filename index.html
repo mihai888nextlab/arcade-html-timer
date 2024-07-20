@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <h1>Enter the time you want to wait</h1>
+      <form>
+        <div class="inp">
+          <div>
+            <input type="number" id="hours" placeholder="00" />
+            <p>h</p>
+          </div>
+          <div>
+            <input
+              type="number"
+              id="minutes"
+              placeholder="00"
+              min="0"
+              max="60"
+            />
+            <p>m</p>
+          </div>
+          <div>
+            <input
+              type="number"
+              id="seconds"
+              placeholder="00"
+              min="0"
+              max="60"
+            />
+            <p>s</p>
+          </div>
+        </div>
+
+        <button type="button" onclick="startTimer()">Start</button>
+      </form>
+    </div>
+  </body>
+</html>
