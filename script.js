@@ -53,4 +53,7 @@ function stopTimer() {
   document.getElementById("display-hours").textContent = "00";
   document.getElementById("display-minutes").textContent = "00";
   document.getElementById("display-seconds").textContent = "00";
+
+  document.getElementById("timer").classList.add("hidden");
+  document.getElementById("form").classList.remove("hidden");
 }
